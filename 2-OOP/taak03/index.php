@@ -1,7 +1,7 @@
 <?php
 
 class product{
-    public $merk;
+     $merk;
     public $prijs;
     public $type;
     public $kleur;
