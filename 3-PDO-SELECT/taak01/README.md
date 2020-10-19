@@ -7,9 +7,9 @@
 In deze opdracht ga je data uit een database halen met behulp van het PDO-object. Dit is een soort tussenlaag tussen PHP (de code) en MySQL (de database). PDO staat voor PHP Data Object. PDO is vele malen beter dan zijn kleine broertjes `mysql` en `mysqli`.
 De voordelen zitten in
 
-> * Beveiliging (prepared statements)
-> * Gebruiksvriendelijkheid (veel functies die helpen automatiseren)
-> * Herbruikbaarheid (verschillende databasetypen te gebruiken)
+> -   Beveiliging (prepared statements)
+> -   Gebruiksvriendelijkheid (veel functies die helpen automatiseren)
+> -   Herbruikbaarheid (verschillende databasetypen te gebruiken)
 
 Om het PDO-object te gebruiken moeten we eerst een connectie maken met de database.
 In de onderstaande code staat een voorbeeld van het maken van zo'n connectie. Er wordt een connectie gemaakt met de `toolsforever` database
@@ -39,7 +39,7 @@ $statement = $database_connectie->prepare($sql); //haal alle gebruikers op uit d
 $statement->execute();
 $database_gegevens = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-foreach($database_gegevens as $gebruiker){  
+foreach($database_gegevens as $gebruiker){
   echo $gebruiker['naam'] . "<br>";
 }
 ```
@@ -63,4 +63,4 @@ foreach($database_gegevens as $gebruiker){
 ## Bronnen
 
 > [PHP Delusions - PDO](https://phpdelusions.net/pdo)  
-> [Geek For Geeks - Associative Arrays in PHP](https://www.geeksforgeeks.org/associative-arrays-in-php/)  
+> [Geek For Geeks - Associative Arrays in PHP](https://www.geeksforgeeks.org/associative-arrays-in-php/)
