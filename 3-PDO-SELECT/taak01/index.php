@@ -1,4 +1,4 @@
-<?
+<?php 
 
 $database_lokatie     = 'localhost';
 $database_naam        = 'toolsforever';
@@ -9,10 +9,12 @@ $database_connectie = new PDO("mysql:host=$database_lokatie;dbname=$database_naa
 
 
 $sql = "SELECT * FROM users";
-$statement = $database_connectie->prepare($sql); //haal alle gebruikers op uit de database toolsforever
-$statement->execute();
+$stmt = $db_conn->prepare($sql);
+$stmt ->execute();
 $database_gegevens = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-foreach($database_gegevens as $gebruiker){  
-  echo $gebruiker['naam'] . "<br>";
-}
+$sql = "SELECT kolommen FROM table WHERE kolom = :placeholder";
+$stmt = $db_conn->prepare($sql);
+$stmt ->bindParam(":placeholder", $placeholder_variabele);
+$stmt ->execute();
+$database_gegevens = $statement->fetch(PDO::FETCH_ASSOC);
