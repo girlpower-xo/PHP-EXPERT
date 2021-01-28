@@ -33,4 +33,4 @@ $stmt->execute()
 
 ## Bronnen
 
-> [PHP Delusions - PDO](https://phpdelusions.net/pdo)  
+> [PHP Delusions - PDO](https://phpdelusions.net/pdo)
