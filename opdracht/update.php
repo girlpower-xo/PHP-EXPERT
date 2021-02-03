@@ -1,8 +1,7 @@
-
 <?php
 
 $database_lokatie     = 'localhost';
-$database_naam        = 'toolsforever';
+$database_naam        = 'voetbalclubasd';
 $database_gebruiker   = 'root';
 $database_wachtwoord  = '';
 
@@ -14,9 +13,8 @@ $database_connectie = new PDO("mysql:host=$database_lokatie;dbname=$database_naa
 
 
 
-    $sql = "DELETE FROM products WHERE id = :ph_id";
-    $stmt = $db_conectie->prepare($sql); //stuur naar mysql.
+    $sql = "UPDATE `gebruikers` SET `achternaam` = 'hoi' WHERE `gebruikers`.`id` = 1;";
+    $stmt = $database_connectie->prepare($sql); //stuur naar mysql.
     $stmt->bindParam(":ph_id", $id );
     $stmt->execute();
     exit();
-

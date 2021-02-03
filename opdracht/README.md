@@ -28,14 +28,14 @@ De voetbalclub moet een administratiesysteem hebben van wie in welk team speelt 
     -   naam (varchar:100)
 -   [ ] Zet zelf bedachte gegevens in deze tabel.
 
-1. [ ] Maak een database bestand: db.conn.php
-2. [ ] Maak een pagina om alle leden te kunnen tonen (overzichtspagina met een tabel)
-3. [ ] Maak een pagina om teams te kunnen bekijken (overzichtspagina met een tabel)
-4. [ ] Maak een pagina om de gegevens van een enkele gebruiker te kunnen tonen (overzicht van een enkele rij)
-5. [ ] Maak een pagina om de gegevens van een enkel team te kunnen tonen (overzicht van een enkele rij)
-6. [ ] Maak op elke regel van de eerder gemaakte tabellen een link waarmee je de rij kunt verwijderen
-7. [ ] Maak een link op de pagina van opdracht 2 die verwijst naar een enkele gebruiker (zie opdracht 4)
-8. [ ] Maak een link op de pagina van opdracht 2 die ervoor zorgt dat de gebruiker (lid) verwijderd wordt (gebruik $\_GET)
+1. [*] Maak een database bestand: db.conn.php
+2. [*] Maak een pagina om alle leden te kunnen tonen (overzichtspagina met een tabel)
+3. [*] Maak een pagina om teams te kunnen bekijken (overzichtspagina met een tabel)
+4. [*] Maak een pagina om de gegevens van een enkele gebruiker te kunnen tonen (overzicht van een enkele rij)
+5. [*] Maak een pagina om de gegevens van een enkel team te kunnen tonen (overzicht van een enkele rij)
+6. [*] Maak op elke regel van de eerder gemaakte tabellen een link waarmee je de rij kunt verwijderen
+7. [*] Maak een link op de pagina van opdracht 2 die verwijst naar een enkele gebruiker (zie opdracht 4)
+8. [*] Maak een link op de pagina van opdracht 2 die ervoor zorgt dat de gebruiker (lid) verwijderd wordt (gebruik $\_GET)
 9. [ ] Maak een link op de pagina van opdracht 2 die ervoor zorgt dat je de gebruiker kunt updaten.
 
 ## Eindresultaat
